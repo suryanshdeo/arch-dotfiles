@@ -39,12 +39,12 @@ gsettings set org.gnome.desktop.default-applications.terminal exec 'ghostty'
 First, check out the dotfiles repo in your $HOME directory using git
 
 ```
-$ git clone git@github.com:suryanshdeo/arch-dotfiles.git
-$ cd dotfiles
+git clone git@github.com:suryanshdeo/arch-dotfiles.git
+cd dotfiles
 ```
 
 then use GNU stow to create symlinks
 
 ```
-$ stow .
+stow .
 ```

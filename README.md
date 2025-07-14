@@ -7,19 +7,19 @@ This directory contains the dotfiles for my system
 ### Git
 
 ```
-pacman -S git
+sudo pacman -S git
 ```
 
 ### Stow
 
 ```
-pacman -S stow
+sudo pacman -S stow
 ```
 
-### zsh and oh-my-posh
+### zsh, oh-my-posh and ghostty
 
 ```
-pacman -S zsh
+sudo pacman -S zsh ghostty
 ```
 ```
 chsh -s $(which zsh)
@@ -30,7 +30,9 @@ wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-
   -O ~/.local/bin/oh-my-posh
 chmod +x ~/.local/bin/oh-my-posh
 ```
-
+```
+gsettings set org.gnome.desktop.default-applications.terminal exec 'ghostty'
+```
 
 ## Installation
 

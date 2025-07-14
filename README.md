@@ -37,6 +37,7 @@ gsettings set org.gnome.desktop.default-applications.terminal exec-arg ''
 yay -S nautilus-open-any-terminal
 ```
 ```
+glib-compile-schemas /usr/share/glib-2.0/schemas
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal ghostty
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal keybindings '<Ctrl><Alt>t'
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal new-tab true

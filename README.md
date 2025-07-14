@@ -32,6 +32,7 @@ chmod +x ~/.local/bin/oh-my-posh
 ```
 ```
 gsettings set org.gnome.desktop.default-applications.terminal exec 'ghostty'
+gsettings set org.gnome.desktop.default-applications.terminal exec-arg ''
 ```
 
 ## Installation

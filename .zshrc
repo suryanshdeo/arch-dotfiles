@@ -120,3 +120,4 @@ plugins=(
 )
 
 ZSH_THEME="nord-extended/nord"
+alias thor='sudo thor-flash-utility'

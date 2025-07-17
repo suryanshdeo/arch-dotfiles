@@ -1,4 +1,4 @@
-# Suryansh's Arch Linux Dotfiles
+# Arch Linux Dotfiles
 
 Welcome to my personal collection of dotfiles for Arch Linux. This repository contains all the configuration files for my setup, which is centered around **Zsh**, **Ghostty**, and **Oh My Posh**. The configuration is managed using **GNU Stow**.
 

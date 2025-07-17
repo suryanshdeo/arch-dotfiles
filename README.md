@@ -1,11 +1,7 @@
 # Suryansh's Arch Linux Dotfiles
 
-![rice](./assets/rice.png)
 Welcome to my personal collection of dotfiles for Arch Linux. This repository contains all the configuration files for my setup, which is centered around **Zsh**, **Ghostty**, and **Oh My Posh**. The configuration is managed using **GNU Stow**.
 
-## Philosophy
-
-The goal is to create a clean, efficient, and aesthetically pleasing development environment on Arch Linux. These dotfiles are designed to be modular and easily managed with `stow`.
 
 ## Prerequisites
 
@@ -15,7 +11,7 @@ Before you begin, ensure you have the following:
 * **AUR Helper**: An AUR helper like `yay` is required for some packages. If you don't have one, you can install it first:
     ```bash
     sudo pacman -S --needed git base-devel
-    git clone [https://aur.archlinux.org/yay.git](https://aur.archlinux.org/yay.git)
+    git clone https://aur.archlinux.org/yay.git
     cd yay
     makepkg -si
     ```
@@ -50,7 +46,7 @@ This setup uses `zsh` as the shell, `ghostty` as the terminal emulator, and `oh-
     mkdir -p ~/.local/bin
 
     # Download the latest Oh My Posh binary
-    wget [https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64](https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64) -O ~/.local/bin/oh-my-posh
+    wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O ~/.local/bin/oh-my-posh
 
     # Make it executable
     chmod +x ~/.local/bin/oh-my-posh
@@ -114,8 +110,8 @@ The final step is to set our newly installed applications as the system defaults
 
     # This command removes a potentially conflicting default script. 
     # Check if `ghostty.py` exists before running.
-    # cd /usr/share/nautilus-python/extensions/ && ls 
-    # sudo rm -f /usr/share/nautilus-python/extensions/ghostty.py
+    cd /usr/share/nautilus-python/extensions/ && ls 
+    sudo rm -f /usr/share/nautilus-python/extensions/ghostty.py
 
     # Restart Nautilus to apply all changes
     nautilus -q
@@ -135,6 +131,3 @@ This repository is structured so that each folder corresponds to a piece of soft
 
 When you run `stow .`, it creates symlinks for all files and folders inside each package directory (like `zsh`, `ghostty`, etc.) directly into your `$HOME` directory. For instance, `zsh/.zshrc` will be symlinked to `~/.zshrc`.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

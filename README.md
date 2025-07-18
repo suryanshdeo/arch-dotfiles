@@ -58,7 +58,7 @@ This setup uses `zsh` as the shell, `ghostty` as the terminal emulator, and `oh-
 Clone this repository into your home directory.
 
 ```bash
-git clone git@github.com:suryanshdeo/arch-dotfiles.git ~/.dotfiles
+git clone https://github.com/suryanshdeo/arch-dotfiles ~/.dotfiles
 cd ~/.dotfiles
 ```
 > **Note:** It's good practice to clone dotfiles into a dedicated directory like `~/.dotfiles` to keep your home directory clean.

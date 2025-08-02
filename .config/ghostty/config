@@ -1,6 +1,6 @@
 font-size = 12
 window-padding-x = 0
-theme = tokyonight
+#theme = nord
 confirm-close-surface=false
 cursor-style = block
 window-width = 110

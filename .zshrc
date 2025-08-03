@@ -35,3 +35,4 @@ fi
 
 # Ensure zcompdump is loaded
 autoload -U compinit && compinit -d ~/.zcompdump
+

@@ -3,8 +3,8 @@
     "logo": {
         "type": "file",
         "source": "/home/rex/.config/fish/mylogo.txt",
-        "height": 18,
-        "width": 30,
+        "height": 1,
+        "width": 5,
         "padding": {
             "top": 1,
             "left": 3

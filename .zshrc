@@ -27,6 +27,7 @@ eval "$(oh-my-posh init zsh --config ~/.poshthemes/1_shell.omp.json)"
 
 # Alias
 alias thor='sudo thor-flash-utility'
+alias pacman-history='grep -e "installed" /var/log/pacman.log | tail -n 50'
 
 # Start fetch (only in interactive shell)
 if [[ $- == *i* ]]; then
@@ -35,4 +36,3 @@ fi
 
 # Ensure zcompdump is loaded
 autoload -U compinit && compinit -d ~/.zcompdump
-

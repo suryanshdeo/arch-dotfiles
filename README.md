@@ -95,12 +95,16 @@ The final step is to set our newly installed applications as the system defaults
     ```bash
     # Install the 'Open Any Terminal' extension for Nautilus
     yay -S nautilus-open-any-terminal
-
+    ```
+    
+    ```bash
     # Configure the extension to use Ghostty
-    gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal ghostty
+    gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal 'custom'
+    gsettings set com.github.stunkymonkey.nautilus-open-any-terminal custom-local-command 'ghostty --working-directory=%s'
     gsettings set com.github.stunkymonkey.nautilus-open-any-terminal keybindings '<Ctrl><Alt>t'
     gsettings set com.github.stunkymonkey.nautilus-open-any-terminal new-tab true
     gsettings set com.github.stunkymonkey.nautilus-open-any-terminal flatpak system
+
     ```
 4.  **Finalize Nautilus Integration:**
     This step removes potentially conflicting default configurations and reloads Nautilus.

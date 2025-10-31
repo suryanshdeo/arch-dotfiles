@@ -106,7 +106,7 @@ The final step is to set our newly installed applications as the system defaults
     This step removes potentially conflicting default configurations and reloads Nautilus.
     ```bash
     # Compile GSettings schemas
-    sudo glib-compile-schemas /usr/share/glib-2-0/schemas/
+    sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 
     # This command removes a potentially conflicting default script. 
     # Check if `ghostty.py` exists before running.

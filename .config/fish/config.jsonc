@@ -34,9 +34,9 @@
         },
         {
             "type": "packages",
-            "format": "{} (pacman)",
             "key": "    ",
-            "keyColor": "34"
+            "keyColor": "34",
+            "format": "{all}"
         },
         {
             "type": "shell",
